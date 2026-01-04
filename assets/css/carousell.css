@@ -1,0 +1,54 @@
+.slider-logos-res {
+  --logo-width: 250px;
+  --logo-height: 150px;
+  --num-items: 30;
+  --duration: 140s; 
+  --gap: 30px;
+  
+  width: 100%;
+  padding: 20px 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.slider-logos-wrapper {
+  width: 100%;
+  max-width: 2536px;
+  margin-inline: auto;
+  position: relative;
+  height: var(--logo-height);
+  /* Máscara de desvanecimiento */
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.slider-logos-item {
+  width: var(--logo-width);
+  height: var(--logo-height);
+  position: absolute;
+  /* Posicionamos todos al final de la fila derecha */
+  left: 100%; 
+  /* Usamos transform para máxima suavidad */
+  animation: scrollLeftSlider var(--duration) linear infinite;
+  animation-delay: calc(var(--duration) / var(--num-items) * (var(--num-items) - var(--n)) * -1);
+}
+
+.slider-logos-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* Evita que el usuario pueda arrastrar la imagen y romper el flujo */
+  user-select: none;
+  pointer-events: none;
+}
+
+@keyframes scrollLeftSlider {
+  from {
+    /* Inicia desde la derecha, sumando el ancho total de la fila */
+    transform: translateX(0);
+  }
+  to {
+    /* Se desplaza hacia la izquierda exactamente la distancia de todos los logos */
+    transform: translateX(calc((var(--logo-width) + var(--gap)) * var(--num-items) * -1));
+  }
+}

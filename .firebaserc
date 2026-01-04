@@ -1,0 +1,11 @@
+{
+  "projects": {
+    "default": "modus-agencia",
+    "modus-agency": "modus-agency",
+    "yes": "propuesta-novatium",
+    "firebase deploy": "propuesta-novatium",
+    "y": "intimate-call"
+  },
+  "targets": {},
+  "etags": {}
+}
