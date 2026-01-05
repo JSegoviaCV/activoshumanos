@@ -22903,38 +22903,3 @@ body.boxed-wrapper .main-header__inner::before {
   }
 }
 /*# sourceMappingURL=insuba.css.map */
-
-@media (max-width: 767px) {
-  .main-slider-three__row {
-    flex-direction: column-reverse;
-  }
-
-  .main-slider-three__item {
-    position: relative;
-  }
-
-  .main-slider-three__item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
-
-  .main-slider-three__image {
-    position: relative;
-    z-index: 0;
-  }
-
-  .main-slider-three__content {
-    position: relative;
-    z-index: 2;
-  }
-
-  .main-slider-three__bg-1 {
-    background-color: transparent;
-  }
-}
