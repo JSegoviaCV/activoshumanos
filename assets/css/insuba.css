@@ -355,6 +355,23 @@ body {
   font-weight: 400;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--insuba-base);
+  color: white;
+  padding: 10px 20px;
+  z-index: 9999;
+  transition: top 0.3s;
+  border-radius: 0 0 5px 5px;
+  font-weight: bold;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 body.locked {
   overflow: hidden;
 }
