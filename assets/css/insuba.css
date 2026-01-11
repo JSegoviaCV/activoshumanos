@@ -22974,3 +22974,20 @@ body.boxed-wrapper .main-header__inner::before {
     color: #fff !important;
   }
 }
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #0f3564;
+  color: white;
+  padding: 10px 15px;
+  z-index: 10000;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}

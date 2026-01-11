@@ -48,6 +48,7 @@
 
 <body class="custom-cursor">
 
+    <a href="#main-content" class="skip-link">Saltar al contenido</a>
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
 
@@ -96,6 +97,7 @@
 
         </header><!-- /.main-header -->
 
+        <main id="main-content" tabindex="-1">
         <section class="main-slider-three" id="home">
             <div class="main-slider-three__carousel insuba-owl__carousel insuba-owl__carousel--with-shadow insuba-owl__carousel--basic-nav owl-carousel owl-theme"
                 data-owl-options='{
@@ -2539,7 +2541,7 @@
                 <img src="assets/images/shapes/contact-shape-2-3.png" alt="shape" class="contact-two__shape__two">
             </div><!-- /.contact-two__shape -->
         </section><!-- /.contact-two contact -->
-
+        </main>
         <footer class="main-footer @@extraClassName">
             <div class="main-footer__top">
                 <div class="main-footer__bg" style="background-image: url(assets/images/backgrounds/footer-bg.jpg);">
@@ -2789,7 +2791,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Buscamos todos los enlaces que apuntan a un ID (#)
-            const links = document.querySelectorAll('a[href^="#"]');
+            const links = document.querySelectorAll('a[href^="#"]:not(.skip-link)');
 
             links.forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
