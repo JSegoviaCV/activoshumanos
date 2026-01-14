@@ -416,115 +416,104 @@ h6 {
   min-width: 300px;
   overflow: hidden;
 }
-
+/* --- SECCIONES CON ESPACIO ARRIBA Y ABAJO --- */
 .section-space {
-  padding-top: var(--section-space, 120px);
-  padding-bottom: var(--section-space, 120px);
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 @media (max-width: 767px) {
   .section-space {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 }
 
 @media (max-width: 575px) {
   .section-space {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 }
 
 .section-space2 {
-  padding-top: var(--section-space2, 118px);
-  padding-bottom: var(--section-space, 120px);
+  padding-top: 65px;
+  padding-bottom: 70px;
 }
 
 @media (max-width: 767px) {
   .section-space2 {
-    padding-top: 96px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 55px;
   }
 }
 
 @media (max-width: 575px) {
   .section-space2 {
-    padding-top: 76px;
-    padding-bottom: 76px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
-.section-space-top {
-  padding-top: var(--section-space, 120px);
-}
-
-@media (max-width: 767px) {
-  .section-space-top {
-    padding-top: 100px;
-  }
-}
-
-@media (max-width: 575px) {
-  .section-space-top {
-    padding-top: 80px;
-  }
-}
-
+/* --- SECCIONES SOLO CON ESPACIO SUPERIOR --- */
+.section-space-top, 
 .section-space-top2 {
-  padding-top: var(--section-space2, 118px);
+  padding-top: 65px;
 }
 
 @media (max-width: 767px) {
+  .section-space-top, 
   .section-space-top2 {
-    padding-top: 96px;
+    padding-top: 50px;
   }
 }
 
 @media (max-width: 575px) {
+  .section-space-top, 
   .section-space-top2 {
-    padding-top: 80px;
+    padding-top: 40px;
   }
 }
 
+/* --- SECCIONES SOLO CON ESPACIO INFERIOR --- */
 .section-space-bottom {
-  padding-bottom: var(--section-space, 120px);
+  padding-bottom: 70px;
 }
 
 @media (max-width: 767px) {
   .section-space-bottom {
-    padding-bottom: 100px;
+    padding-bottom: 55px;
   }
 }
 
 @media (max-width: 575px) {
   .section-space-bottom {
-    padding-bottom: 80px;
+    padding-bottom: 45px;
   }
 }
 
+/* --- EL CASO ESPECIAL (EL MÁS GRANDE) --- */
 .section-space-bottom2 {
-  padding-bottom: 239px;
+  padding-bottom: 90px; /* Reducido de 239px */
 }
 
 @media (max-width: 991px) {
   .section-space-bottom2 {
-    padding-bottom: var(--section-space, 120px);
+    padding-bottom: 70px;
   }
 }
 
 @media (max-width: 767px) {
   .section-space-bottom2 {
-    padding-bottom: 100px;
+    padding-bottom: 55px;
   }
 }
 
 @media (max-width: 575px) {
   .section-space-bottom2 {
-    padding-bottom: 80px;
+    padding-bottom: 45px;
   }
 }
-
 .container-fluid,
 .container {
   padding-left: 15px;
