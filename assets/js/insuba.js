@@ -504,7 +504,7 @@
   function SmoothMenuScroll() {
     var anchor = $(".scrollToLink");
     if (anchor.length) {
-      anchor.children("a").bind("click", function (event) {
+      anchor.children("a:not(.skip-link)").bind("click", function (event) {
         if ($(window).scrollTop() > 10) {
           var headerH = "0";
         } else {
