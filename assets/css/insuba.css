@@ -26632,3 +26632,19 @@ body.boxed-wrapper .main-header__inner::before {
 /*# sourceMappingURL=insuba.css.map */
 
 
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000000;
+  color: white;
+  padding: 8px;
+  z-index: 10000;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
