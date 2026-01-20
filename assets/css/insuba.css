@@ -26632,3 +26632,22 @@ body.boxed-wrapper .main-header__inner::before {
 /*# sourceMappingURL=insuba.css.map */
 
 
+
+/* Accessibility */
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--insuba-base, #d42324);
+    color: var(--insuba-white, #ffffff);
+    padding: 10px 15px;
+    z-index: 99999;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.skip-link:focus {
+    transform: translateY(10px);
+}
