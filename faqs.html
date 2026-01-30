@@ -46,6 +46,7 @@
 </head>
 
 <body class="custom-cursor">
+    <a class="skip-link" href="#main-content">Saltar al contenido</a>
 
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
@@ -120,11 +121,11 @@
                             </a>
                         </div><!-- /.main-header__logo -->
                         <div class="main-header__right">
-                            <div class="mobile-nav__btn mobile-nav__toggler">
+                            <button type="button" class="mobile-nav__btn mobile-nav__toggler" aria-label="Abrir menú">
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                            </div><!-- /.mobile-nav__toggler -->
+                            </button><!-- /.mobile-nav__toggler -->
                             <nav class="main-header__nav main-menu">
                                 <ul class="main-menu__list one-page-scroll-menu">
                                     <li class="scrollToLink current"><a href="index.html">Inicio</a></li>
@@ -159,7 +160,7 @@
             </header><!-- /.main-header -->
         </div><!-- /.header -->
 
-        <section class="page-header">
+        <section class="page-header" id="main-content" tabindex="-1">
             <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg.png);">
             </div><!-- /.page-header__bg -->
             <div class="container">
